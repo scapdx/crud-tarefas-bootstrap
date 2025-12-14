@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Home • CRUD de Tarefas</title>
+  
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand fw-semibold" href="index.html">
+      <i class="bi bi-check2-square me-2"></i>CRUD de Tarefas
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navTopo" aria-controls="navTopo" aria-expanded="false" aria-label="Alternar navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navTopo">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door me-1"></i>Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="listagem.html"><i class="bi bi-list-check me-1"></i>Listagem</a></li>
+        <li class="nav-item"><a class="nav-link" href="novo.html"><i class="bi bi-plus-circle me-1"></i>Novo</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <main class="container">
+    <div class="row g-4 align-items-stretch">
+      <div class="col-lg-7">
+        <div class="card p-4 h-100">
+          <h1 class="h3 mb-3">Bem-vindo(a) 👋</h1>
+          <p class="mb-2">
+            Este é um protótipo de <strong>interface gráfica</strong> (sem banco de dados) de um sistema CRUD
+            para <strong>Cadastro de Tarefas</strong>.
+          </p>
+          <p class="mb-4">
+            Aqui você consegue navegar entre as telas de <em>Home</em>, <em>Listagem</em>, <em>Novo Registro</em> e <em>Edição</em>.
+            A parte de salvar/editar/excluir de verdade não foi implementada, porque a atividade pediu apenas a interface.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-primary" href="listagem.html">
+              <i class="bi bi-list-check me-1"></i>Ver listagem de tarefas
+            </a>
+            <a class="btn btn-outline-secondary" href="novo.html">
+              <i class="bi bi-plus-circle me-1"></i>Criar nova tarefa
+            </a>
+          </div>
+
+          <hr class="my-4">
+          <p class="footer-note m-0">
+            Feito com Bootstrap 5 (layout simples, nível iniciante).
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="card p-4 h-100">
+          <h2 class="h5 mb-3"><i class="bi bi-lightbulb me-2"></i>Como usar</h2>
+          <ol class="mb-0">
+            <li>Abra a tela de <strong>Listagem</strong> para ver 5 registros simulados.</li>
+            <li>Clique em <strong>Editar</strong> para ir para a tela de edição (dados simulados).</li>
+            <li>Clique em <strong>Excluir</strong> para abrir o <strong>modal</strong> de confirmação.</li>
+            <li>Clique em <strong>Novo</strong> para ver o formulário de cadastro.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
